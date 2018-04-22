@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="recipe" href="../js/recipe.js">
 
     <title>Landing page</title>
 
@@ -18,16 +19,18 @@
 
 
 <header id="header">
-        <i class="fas fa-birthday-cake" id="header-img"></i>
         <div id="search-bar">
+        <i class="fas fa-birthday-cake" id="header-img"></i>
+        
         <input type="text" name="search" placeholder="search">
         <i class="fas fa-search"></i>
         </div>
 <nav id="nav-bar"> 
 <a href="#" class="nav-link">All Recipes</a>
 <a href="#" class="nav-link">Subsribe</a>
-<a href="#" class="nav-link">Contact us</a>
+<a href="#" class="nav-link">Contact</a>
 <a href="#" class="nav-link">About me</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 </header>
 
@@ -36,7 +39,7 @@
 <div id="bannertext">All my recipes</div>
 </div>
 
-
+<div id="scroll-over">
 <a href="#"><button class="read-more">Read my story</button></a>
 
 
@@ -69,17 +72,58 @@
     </article>
    
     
-</div>
-<!--
-<footer>
-<p>Coded by: Sonja Koivisto</p>
-    
-</footer>
+</section>
+<section id="section2">
+<h2>Hot right now</h2>
+<p>Earth comes to live in the springtime. Green will take over the greyness of winter. 
+    Spring inspires to use the seasonal veggies like asparagus, peas, spinach and potatoes while cooking. 
+    Many are inclined to eat lighter meals like salads this time of the year but here are few delicious recipes that
+    will get your belly filled.
+</p>
+</section>
 
+<section id="section3">
+<!--
+<form action="https://www.freecodecamp.com/email-submit" target="_blank" id="form">
+    
+    <h2>Get the newsletter for more inspiration</h2>
+    Email:
+    <input type="text" name="email" id="email" placeholder="Your email address"><br>
+    <input type="submit" name="submit" id="submit" value="Submit">
+
+</form>
 -->
 
 
 
+<div id="video">
+    
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/vGox7OJyjAc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p>My all-time favourite spring food is asparagus risotto. Asparagus is such a delicate veggie that it's only available this time of the year and its flavour matches 
+        perfectly to the smooth consistency of risotto. This Jamie Oliver recipe made by Gennaro Contaldo freshens up the usual asparagus risotto by
+    adding peas and zuchhini to it.</p>
+</div>
+<div>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/wno_qUB02lM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p>Green curry is like fireworks of flavours. This Jamie Oliver's recipe will spice up the beautiful, sunny days coming up.
+        It's super easy to alter to your own taste with using whatever you have in your fridge. Let these Thai flavours bring a smile to your face.
+    </p>
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<footer>
+<p>Coded by: <a href="https://www.linkedin.com/in/sonja-koivisto/">Sonja Koivisto</a></p>
+    
+</footer>
 
 
 
@@ -92,8 +136,6 @@
 
 
 
-
-
-
+</div>
 
 </body>
