@@ -3,6 +3,13 @@ body{
     background-color: #d2d2d2;
     
 }
+#header-img{
+    font-size: 200%;
+    color: pink;
+}
+#search{
+    font-size: 120%;
+}
 
 #header{
     display: flex;
@@ -16,7 +23,7 @@ body{
     position: fixed;
     
 }
-#nav-bar >a{
+#nav-bar> a{
     text-decoration: none;
     color: #000;
     float: left;
@@ -25,14 +32,11 @@ body{
     font-size: 1.1em;
 }
 
+
 .icon {
     display: none;
 }
 
-#search-bar{
-    margin-top: 1em;
-    
-}
 /*
 #header-text{
     list-style: none;
@@ -90,6 +94,10 @@ body{
     border: solid 1px #eee;
     border-radius: 2em;
 }
+.read-more:hover{
+    padding: 1.2em;
+    background-color: rgb(136, 129, 189);
+}
 
 .container{
     display: grid;
@@ -103,10 +111,13 @@ body{
 
 .container >article{
     border: solid 1px #333;
-    position: relative;
-    
+    position: relative;  
 }
 
+article:hover{
+   padding: 1em;
+   background-color: aliceblue;
+}
 
 .article-img {
     height: 100%;
