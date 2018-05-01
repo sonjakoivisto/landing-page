@@ -10,6 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="recipe" href="../js/recipe.js">
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
 
     <title>Landing page</title>
 
@@ -23,13 +25,13 @@
         <i class="fas fa-birthday-cake" id="header-img"></i>
         
         <input type="text" name="search" placeholder="search">
-        <i class="fas fa-search"></i>
+        <i class="fas fa-search" id="search"></i>
         </div>
 <nav id="nav-bar"> 
-<a href="#" class="nav-link">All Recipes</a>
-<a href="#" class="nav-link">Subsribe</a>
-<a href="#" class="nav-link">Contact</a>
-<a href="#" class="nav-link">About me</a>
+<a href="#all recipes" class="nav-link">All Recipes</a>
+<a href="#form" class="nav-link">Subsribe</a>
+<a href="#socialmedia" class="nav-link">Contact</a>
+<a href="#more" class="nav-link">About me</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 </header>
@@ -40,14 +42,14 @@
 </div>
 
 <div id="scroll-over">
-<a href="#"><button class="read-more">Read my story</button></a>
+<a id="more" href="#"><button class="read-more" #readmore >Read my story</button></a>
 
 
 <section class="container">
 
      
     <article class="one">
-        <a href="#"><img src="../img/littlebites.jpg" alt="little bites" class="article-img">
+        <a id="all recipes" href="#"><img src="../img/littlebites.jpg" alt="little bites" class="article-img">
         <p class="foods">Little bites</p></a>
     </article>
 
@@ -84,9 +86,9 @@
 
 <section id="section3">
 
-<div id="video">
+<div>
     
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/vGox7OJyjAc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/vGox7OJyjAc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <p>My all-time favourite spring food is asparagus risotto. Asparagus is such a delicate veggie that it's only available this time of the year and its flavour matches 
         perfectly to the smooth consistency of risotto. This Jamie Oliver recipe made by Gennaro Contaldo freshens up the usual asparagus risotto by
     adding peas and zuchhini to it.</p>
@@ -107,7 +109,7 @@
     
     <h2>Get the newsletter for more inspiration</h2>
     Email:
-    <input type="text" name="email" id="email" placeholder="Your email address"><br>
+    <input type="email" name="email" id="email" placeholder="Your email address"><br>
     <input type="submit" name="submit" id="submit" value="Submit">
 
 </form>
