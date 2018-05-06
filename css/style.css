@@ -3,12 +3,17 @@ body{
     background-color: #d2d2d2;
     
 }
+
 #header-img{
-    font-size: 200%;
-    color: pink;
+    width: 2em;
+    height: 2em;
+    
 }
 #search{
     font-size: 120%;
+}
+#search-bar{
+    margin-top: 0.5em;
 }
 
 #header{
@@ -155,7 +160,11 @@ article:hover{
 }
 #section4{
     display: grid;
+    /*grid-template-columns: repeat(3, minmax(250px, 1fr));*/
     grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+#section4 >article{
+    position: relative;
 }
 #form {
     background-color: #666;
@@ -176,16 +185,22 @@ article:hover{
 }
 
 #imagediv{
-    border: solid red 1px;
+    padding-top: 2em;
+    background-color: azure;
+    position: relative;
+    margin: 0 auto;
 }
 #picture{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transform: rotate(270deg);
     max-height: 16em;
+    margin-bottom: 2em;
+    border: 2px solid #666;
     
 }
+
 footer {
     display: block;
     border: solid 1px #666;
@@ -200,7 +215,7 @@ footer> a{
     color: #fff;
 }
 
-@media (max-width: 768px){
+@media (max-width: 766px){
 
 #bannertext{
     font-size: 240%;
@@ -215,6 +230,7 @@ footer> a{
    #bannertext{
        font-size: 450%;
    }
+
 }
 
 @media (max-width: 600px) {
@@ -239,5 +255,8 @@ footer> a{
     display: block;
     text-align: left;
   }
+
+
+}
   
 }
